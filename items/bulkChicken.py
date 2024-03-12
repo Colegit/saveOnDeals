@@ -25,7 +25,8 @@ def bulkChicken():
 
     if price_element:
         # Get the price value
-        price = float(price_element.text.strip('$'))
+        price_text = price_element.text.strip().strip('$').replace(',', '')
+        price = float(price_text)
 
         # Check if the price is below the target
         if price < target_price:
@@ -38,10 +39,6 @@ def bulkChicken():
                 message=message,
                 timeout=50  # Display the notification for 10 seconds
             )
-
-bulkChicken()
-
-
-
-
-
+            print(message)
+            return message
+        return ""
