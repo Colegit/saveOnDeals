@@ -1,1 +1,1 @@
-emailList = ['ENTER EMAILS YOU WANT TO RECIEVE NOTIFICATIONS', 'example@yahoo.com']
+emailList = ['colechapman1993@gmail.com']

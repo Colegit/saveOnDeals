@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
-def send_email(subject, message, sender_email, receiver_emails, password):
+def sendEmail(subject, message, sender_email, receiver_emails, password):
     # Create a MIMEText object to represent the email body
     msg = MIMEMultipart()
     msg['From'] = sender_email
@@ -25,14 +25,3 @@ def send_email(subject, message, sender_email, receiver_emails, password):
 
     # Close the connection to the SMTP server
     server.quit()
-
-# Set your Gmail account credentials
-sender_email = 'your@gmail.com'  # Your Gmail address
-receiver_emails = ['recipient1@gmail.com', 'recipient2@gmail.com']  # List of recipient email addresses
-password = 'your_password'  # Your Gmail password
-
-# Example usage
-subject = 'Price Drop Alert'
-message = 'The price dropped below the target.'
-
-send_email(subject, message, sender_email, receiver_emails, password)

@@ -31,7 +31,7 @@ def bulkChicken():
         # Check if the price is below the target
         if price < target_price:
             # Prepare the notification message
-            message = f'{thingWatched} dropped below ${target_price}. Current price: ${price}'
+            message = f'{thingWatched}: Current price: ${price}'
 
             # Send the desktop notification
             notification.notify(
