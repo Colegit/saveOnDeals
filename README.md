@@ -2,7 +2,7 @@
 
 To add a new food item to watch, within the items folder, create a new function referencing the bulkChicken.py as a template.
 
-Then within the main.py file, modify the script to include your newly created function.
+Then within the main.py file, modify the script to include your newly created function by adding your function into the items dictionary.
 
 #### Setting up your SMTP
 
