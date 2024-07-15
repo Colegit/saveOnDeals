@@ -2,9 +2,19 @@ from items.bulkChicken import bulkChicken
 from utils.notifierService import sendEmail
 from utils.emailList import emailList
 
-chicken = bulkChicken()
+# Add your scraper function within the items dictionary
+items = {
+  'Save On Chicken': builkChicken(),
+  'Save On Ground Pork': groundPork()
+}
 
-if(chicken != ""):
+messages = []
+
+for itemName, itemDetails in item.items():
+  if itemDetails:
+    messages.append(f"{itemName}: {itemDetails}")
+
+if(messages):
 
 # Set your Gmail account credentials
   sender_email = 'ENTER YOUR SMTP EMAIL'  
