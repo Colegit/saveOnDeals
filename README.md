@@ -12,4 +12,12 @@ Once you have an SMTP server set up, plug in the credentials into the main.py fi
 
 #### Running the Script
 
-Run the main.py file on any Windows task scheduler or Linux chron job daily and get notified when your commonly purchased items are on sale. 
+To run, you will first need the following modules:
+
+1) bs4
+2) plyer
+3) requests
+
+`pip install requests bs4 plyer requests`
+
+After installing the modules, run the main.py file on any Windows task scheduler or Linux chron job daily and get notified when your commonly purchased items are on sale. 

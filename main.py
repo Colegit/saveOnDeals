@@ -4,13 +4,13 @@ from utils.emailList import emailList
 
 # Add your scraper function within the items dictionary
 items = {
-  'Save On Chicken': builkChicken(),
-  'Save On Ground Pork': groundPork()
+  'Save On Chicken': bulkChicken(),
+  #'Save On Ground Pork': groundPork()
 }
 
 messages = []
 
-for itemName, itemDetails in item.items():
+for itemName, itemDetails in items.items():
   if itemDetails:
     messages.append(f"{itemName}: {itemDetails}")
 
