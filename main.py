@@ -23,6 +23,6 @@ if(messages):
 
   # Example usage
   subject = 'Save On Foods has Sale Items'
-  message = chicken
+  message = '\n'.join(messages)
 
   sendEmail(subject, message, sender_email, receiver_emails, password)
